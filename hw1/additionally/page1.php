@@ -14,12 +14,15 @@ $string = 'Меня зовут $name.'
     . ' год.'
     . '<br>'
     . 'На моих часах сейчас: '
-    . $date;
+    . $date
+    . '.';
 
 echo $string . '<br>' . '<br>';
 
 $string2 = str_replace(' ', '_', $string);
 
-echo $string2 . '<br>' . '<br>';
+$string3 = substr($string2, 115, 100);
+
+echo $string3 . '<br>' . '<br>';
 
 ?>
