@@ -24,5 +24,3 @@ $string2 = str_replace(' ', '_', $string);
 $string3 = substr($string2, 115, 100);
 
 echo $string3 . '<br>' . '<br>';
-
-?>
