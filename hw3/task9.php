@@ -59,22 +59,18 @@ function transliter($string, $translitAlph) {
 
     foreach ($stringArr as $key => $value) {
 
-        foreach ($translitAlph as $T_key => $T_value) {
-
-            if ($value == $T_key) {
-
-                $value = $T_value;
-
-            }
-        }
-
         if ($value == ' ') {
 
             $value = '_';
 
+        } elseif (isset($translitAlph[$value])) {
+
+            $value = $translitAlph[$value];
+
         }
 
-        array_push($newStringArr, $value);
+//        array_push($newStringArr, $value);
+        $newStringArr[] = $value;
     }
 
     $newString = implode($newStringArr);

@@ -2,7 +2,7 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
 
-E_
+//E_
 /*
 $var = 5;
 $var2 = &$var;
